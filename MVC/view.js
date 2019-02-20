@@ -121,7 +121,7 @@ class View {
 
   closeModal(e) {
     // modal should only close when clicking the background
-    // this prevents clicking on the modal itself from closing it
+    // this prevents the modal from closing itself when clicked on
     if(e.target !== e.currentTarget)
       return;
 
@@ -129,6 +129,7 @@ class View {
 
     this.removeEventListener(modalBackground, 'click', this.closeModal.bind(this));
     
+    // also remove button listener if button exists
     const button = modal.querySelector('#closeButton');
     
     if(button)
