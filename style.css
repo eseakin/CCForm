@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#paymentForm {
+  width: 350px;
+  margin: 50px auto;
+  border: 1px solid #969696FF;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+}
+
+input, label, button {
+  font-size: 16px;
+}
+
+input[name="expirationMonth"] {
+  width: 30px;
+}
+
+input[name="expirationYear"] {
+  width: 60px;
+}
+
+.formField {
+  margin: 10px
+}
+
+#paymentForm > button {
+  margin-left: 10px;
+  border-radius: 3px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: lighter;
+}
+
+#paymentForm > button:hover {
+  /*
+    hover is not good for mobile first design because mobile devices can't hover
+  */
+}
+
+#submit {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#clearForm {
+  background-color: #f44336;
+  color: white;
+}
+
+#errorMessage {
+  text-align: center;
+  color: red;
+  font-size: 16px;
+}
+
+.cardType {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.modalBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  cursor: pointer;
+}
+
+.modal {
+  width: 200px;
+  height: 120px;
+  background-color: white;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin: 120px auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 black;
+  cursor: default;
+}
+
+
+@media  (max-width: 500px) {
+  #paymentForm {
+    width: 85%;
+  }
+  
+}

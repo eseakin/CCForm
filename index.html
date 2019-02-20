@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Eric Eakin CC Input Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <form id="paymentForm">
+      <div id="errorMessage"></div>
+
+      <div class="formField">
+        <label>Card Number</label>
+        <input type="text" name="cardNum" id="cardNum" />
+        <div class="cardType" id="cardType"></div>
+      </div>
+
+      <div class="formField">
+        <label>Amount</label>
+        <input type="text" name="amount" id="amount" />
+      </div>
+
+      <div class="formField">
+        <label>Expiration Date</label>
+        <input type="text" name="expirationMonth" placeholder="MM" id="expirationMonth" />
+        /
+        <input type="text" name="expirationYear" placeholder="YYYY" id="expirationYear" />
+      </div>
+
+      <button type="button" id="submit">Submit</button>
+      <button type="button" id="clearForm">Clear</button>
+    </form>
+
+    <script type="text/javascript" src="./MVC/model.js"></script>
+    <script type="text/javascript" src="./MVC/view.js"></script>
+    <script type="text/javascript" src="./MVC/controller.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
