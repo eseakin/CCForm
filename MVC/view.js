@@ -119,7 +119,12 @@ class View {
     this.state.modal.innerHTML = `<h3>${title}</h3><p>${content}</p>${showButton ? '<button id="closeButton" type="button" onclick="this.closeModal">Ok</button>' : ''}`;
   }
 
-  closeModal() {
+  closeModal(e) {
+    // modal should only close when clicking the background
+    // this prevents clicking on the modal itself from closing it
+    if(e.target !== e.currentTarget)
+      return;
+
     const { modalBackground, modal } = this.state;
 
     this.removeEventListener(modalBackground, 'click', this.closeModal.bind(this));

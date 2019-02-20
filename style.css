@@ -89,10 +89,7 @@ input[name="expirationYear"] {
   height: 120px;
   background-color: white;
   text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding: 20px 40px 40px;
   margin: 120px auto;
   border: 1px solid gray;
   border-radius: 5px;
