@@ -16,6 +16,10 @@ button {
   cursor: pointer;
   user-select: none;
   outline: none;
+  border-radius: 3px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: lighter;
 }
 
 input, label, button {
@@ -36,10 +40,6 @@ input[name="expirationYear"] {
 
 #paymentForm > button {
   margin-left: 10px;
-  border-radius: 3px;
-  padding: 6px 12px;
-  cursor: pointer;
-  font-weight: lighter;
 }
 
 #paymentForm > button:hover {
@@ -55,6 +55,11 @@ input[name="expirationYear"] {
 
 #clearForm {
   background-color: #f44336;
+  color: white;
+}
+
+#closeButton {
+  background-color: #555;
   color: white;
 }
 
